@@ -1,5 +1,4 @@
 import os
-
 import openai
 from flask import Flask, redirect, render_template, request, url_for
 
@@ -7,7 +6,8 @@ from TradingBot.data_analysis import rsi, generate_plot, moving_avg, stochastic,
     volatlity
 
 app = Flask(__name__)
-openai.api_key = os.getenv("OPENAI_API_KEY")
+#openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = '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'
 
 @app.route("/", methods=("GET", "POST"))
 def index():

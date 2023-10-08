@@ -82,7 +82,7 @@ def rsi(stock_symbol, time):
     # Print the result
     plt.show()
 
-#rsi("btc-usd", 7)
+rsi("btc-usd", 7)
 
 def moving_avg(stock_symbol, time):
     symbol = yf.Ticker(stock_symbol)
